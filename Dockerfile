@@ -20,6 +20,8 @@ WORKDIR /app
 RUN npm i -g fsh-sushi
 
 # Download the IG publisher.
-RUN curl https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.publisher.jar -o input-cache/org.hl7.fhir.publisher.jar --create-dirs
+# RUN curl https://fhir.github.io/latest-ig-publisher/org.hl7.fhir.publisher.jar -o input-cache/org.hl7.fhir.publisher.jar --create-dirs
+RUN curl https://storage.googleapis.com/ig-build/org.hl7.fhir.publisher.jar -o input-cache/org.hl7.fhir.publisher.jar --create-dirs
+
 RUN ls -alh
 
