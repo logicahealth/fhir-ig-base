@@ -1,5 +1,5 @@
 FROM openjdk:15-buster
-LABEL maintainer="Preston Lee <preston.lee@prestonlee.com"
+LABEL maintainer="Preston Lee <preston.lee@prestonlee.com>"
 
 # Install native compilation dependencies.
 RUN apt-get update -y && apt-get upgrade -y
