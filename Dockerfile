@@ -22,6 +22,7 @@ RUN npm i -g fsh-sushi
 # Download the IG publisher.
 COPY ./_updatePublisher.sh .
 RUN ./_updatePublisher.sh -y
+RUN chmod +x *.sh *.bat
 
 RUN ls -alh
 
